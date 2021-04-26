@@ -1,0 +1,35 @@
+<div id="abhi">
+  <h1> New User </h1>
+  <form (ngSubmit)="onSubmit(f)" #f="ngForm" class="form-register">
+    <div class="form-group" style="text-align:center">
+      First Name :
+      <input class="form-control" type="text" placeholder=" First Name"  ngModel required name="first name">
+    </div>
+    <br>
+    <div class="form-group" style="text-align:center">
+      Last Name :
+      <input class="form-control"type="text" placeholder=" Last Name"  ngModel required name="last name">
+    </div><br>
+    <div class="form-group" style="text-align:center">
+      Age :
+      <input class="form-control" type="text" placeholder="Age"  ngModel required name="age">
+    </div>
+    <br>
+    <div class="form-group" style="text-align:center">
+      Gender :
+      <input class="form-group" type="radio" value="Male" name="r1">
+      <label>Male</label>
+      <input class="form-group" type="radio" value="Female" name="r1">
+      <label>Female</label>
+    </div>
+    <br>
+    <div class="form-group">
+      Mobile Number :
+      <input class="form-control"type="text" placeholder="Number" size="35px" ngModel required name="Mobile Number">
+    </div>
+    <br>
+    <div style="text-align:center">
+      <button type="submit" onclick="alert('User Has Been Created')"[disabled]="!f.valid"> Submit </button>
+    </div>
+  </form>
+</div>

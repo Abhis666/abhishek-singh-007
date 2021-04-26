@@ -1,0 +1,33 @@
+
+.form-group{
+  display :flex;
+  color: green;
+  
+}
+h1{
+  display: flex;
+  justify-content: center;
+  color: blue;
+  background-color: black;
+  
+}
+#abhi{
+  background-color: yellow;
+  
+  min-height:60vh;
+  
+}
+button{
+  background-color: red;
+  color: black;
+  border-radius: 10px;
+
+}
+.form-control{
+  color:black;
+  background-color: pink;
+  width: 50%;
+  position: absolute;
+  left:30%;
+  text-align: center;
+}
